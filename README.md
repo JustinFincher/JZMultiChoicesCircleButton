@@ -1,10 +1,10 @@
 # JZMultiChoicesCircleButton
-
+![JZ.jpg](https://github.com/JustinFincher/JZMultiChoicesCircleButton/raw/master/DemoPic/JZ.jpg)  
 #Introduction
 JZMultiChoicesCircleButton is a Multi-choices button.  
 Just tap it and hold to your choice! yeah ,so cool, such easy.   
 It's inspired by Nicola Felasquez Felaco's [work](https://dribbble.com/shots/2293573-Pubbblish)  
-And This is my implementation using ObjC, demo gif:   
+And This is my [implementation](https://dribbble.com/shots/2333536-ParallaxCircleButton) using ObjC, demo gif:   
 ![DemoGiF.gif](https://github.com/JustinFincher/JZMultiChoicesCircleButton/raw/master/DemoPic/DemoGiF.gif)  
 
 ---
@@ -62,7 +62,7 @@ Just grab JZMultiChoicesCircleButton.h and .m .Or you can wait for cocoapods.
     [NewBTN FailedCallBackWithMessage:@"NO..."];
 }
 ```
-Use SuccessCallBackWithMessage and FailedCallBackWithMessage to show the animated infomation , or button will be **full screen and don't disapper!!!!**
+Use SuccessCallBackWithMessage and FailedCallBackWithMessage to show the animated infomation , or button will be **full screen and don't disappear!!!!**
 
 
 ---

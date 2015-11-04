@@ -41,7 +41,7 @@
                                                                                       ButtonText:TextArray
                                                                                     ButtonTarget:TargetArray
                                                                                      UseParallex:YES
-                                                                               ParallaxParameter:300
+                                                                               ParallaxParameter:100 
                                                                            RespondViewController:self];
     [self.view addSubview:NewBTN];
     

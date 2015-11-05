@@ -1,21 +1,22 @@
 # JZMultiChoicesCircleButton
 ![JZ.jpg](https://github.com/JustinFincher/JZMultiChoicesCircleButton/raw/master/DemoPic/JZ.jpg)  
+
+[![CI Status](http://img.shields.io/travis/Fincher Justin/JZMultiChoicesCircleButton.svg?style=flat)](https://travis-ci.org/Fincher Justin/JZMultiChoicesCircleButton)
+[![Version](https://img.shields.io/cocoapods/v/JZMultiChoicesCircleButton.svg?style=flat)](http://cocoapods.org/pods/JZMultiChoicesCircleButton)
+[![License](https://img.shields.io/cocoapods/l/JZMultiChoicesCircleButton.svg?style=flat)](http://cocoapods.org/pods/JZMultiChoicesCircleButton)
+[![Platform](https://img.shields.io/cocoapods/p/JZMultiChoicesCircleButton.svg?style=flat)](http://cocoapods.org/pods/JZMultiChoicesCircleButton)
+
 #Introduction
 JZMultiChoicesCircleButton is a Multi-choices button.  
 Just tap it and hold to your choice! yeah ,so cool, such easy.   
 It's inspired by Nicola Felasquez Felaco's [work](https://dribbble.com/shots/2293573-Pubbblish)  
 And This is my [implementation](https://dribbble.com/shots/2333536-ParallaxCircleButton) using ObjC, demo gif:   
-![DemoGiF.gif](https://github.com/JustinFincher/JZMultiChoicesCircleButton/raw/master/DemoPic/DemoGiF.gif)  
+![DemoGiF.gif](https://github.com/JustinFincher/JZMultiChoicesCircleButton/raw/master/DemoPic/DemoGiF.gif) 
 
----
-#HOW-TO
-Git clone to see the sample.  
-JZMultiChoicesCircleButton is a UIView.  
-Just grab JZMultiChoicesCircleButton.h and .m .Or you can wait for cocoapods.  
+## Usage
 
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
----
-#Example
 ```
 #import "JZMultiChoicesCircleButton.h"
 
@@ -65,7 +66,26 @@ Just grab JZMultiChoicesCircleButton.h and .m .Or you can wait for cocoapods.
 Use SuccessCallBackWithMessage and FailedCallBackWithMessage to show the animated infomation , or button will be **full screen and don't disappear!!!!**
 
 
----
-#TODO
-add cocoapods support  
-fix icon disapper when clicked too frequently
+
+## Installation
+
+JZMultiChoicesCircleButton is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "JZMultiChoicesCircleButton"
+```
+
+Or just grab JZMultiChoicesCircleButton.h and .m from github.
+
+
+##TO-DO 
+Fix icon disapper when clicked too frequently
+
+## Author
+
+Fincher Justin, zhtsu47@me.com
+
+## License
+
+JZMultiChoicesCircleButton is available under the MIT license. See the LICENSE file for more info.

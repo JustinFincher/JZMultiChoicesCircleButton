@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		023C62236CED11A46305865B9DF501EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		0D49B7971BEBC12600AEE3A0 /* JZMultiChoicesCircleButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D49B7951BEBC12600AEE3A0 /* JZMultiChoicesCircleButton.h */; };
+		0D49B7981BEBC12600AEE3A0 /* JZMultiChoicesCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D49B7961BEBC12600AEE3A0 /* JZMultiChoicesCircleButton.m */; };
+		0D49B7A21BEBC25300AEE3A0 /* CallbackSuccess.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49B79C1BEBC25300AEE3A0 /* CallbackSuccess.png */; };
+		0D49B7A31BEBC25300AEE3A0 /* CallbackSuccess@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49B79D1BEBC25300AEE3A0 /* CallbackSuccess@2x.png */; };
+		0D49B7A41BEBC25300AEE3A0 /* CallbackSuccess@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49B79E1BEBC25300AEE3A0 /* CallbackSuccess@3x.png */; };
+		0D49B7A51BEBC25300AEE3A0 /* CallbackWrong.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49B79F1BEBC25300AEE3A0 /* CallbackWrong.png */; };
+		0D49B7A61BEBC25300AEE3A0 /* CallbackWrong@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49B7A01BEBC25300AEE3A0 /* CallbackWrong@2x.png */; };
+		0D49B7A71BEBC25300AEE3A0 /* CallbackWrong@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D49B7A11BEBC25300AEE3A0 /* CallbackWrong@3x.png */; };
+		4F0A241EB480013411CC8B38AA4A5655 /* JZMultiChoicesCircleButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE8E793E89B78A756DF2694CB3B0CA1 /* JZMultiChoicesCircleButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7402EB60A75F8DB99C66B03C4114678C /* JZMultiChoicesCircleButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CE11031193F72CA1F6D7227523FB82B /* JZMultiChoicesCircleButton.bundle */; };
+		7D93B09B8751480AEF7EB84138F947B9 /* Pods-JZMultiChoicesCircleButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E13B9AA2EF2B93E92B6B09AF62FF511 /* Pods-JZMultiChoicesCircleButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		872B47DEAFA79AE2ED4DA67999E1B4E9 /* Pods-JZMultiChoicesCircleButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 203FEDA557A09F70F6CCA6EF262B120A /* Pods-JZMultiChoicesCircleButton_Tests-dummy.m */; };
+		8759E808F5D3FE470E425515322FA481 /* Pods-JZMultiChoicesCircleButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8F80856BB3AEB471FBE5D1FE562BEAA /* Pods-JZMultiChoicesCircleButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8D0963BBD49DCCA590D4E4B588BDA15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		C00233263E3002184588BE1B8FC0A2C1 /* JZMultiChoicesCircleButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 294948BDD7653B2C0C0F457B49BD7A00 /* JZMultiChoicesCircleButton-dummy.m */; };
+		D758A55B3E2FA7167A4D0660396D43BC /* Pods-JZMultiChoicesCircleButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C86DB8B2B0BF42018FC25DB12DFF25 /* Pods-JZMultiChoicesCircleButton_Example-dummy.m */; };
+		FF169E5912EDA331072F9A02AB61D91F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E2056DA249C57D0C4C4C2817E4DC08E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C1A55756A8271677DA1D349FB85C53;
+			remoteInfo = JZMultiChoicesCircleButton;
+		};
+		905D8D9C81403D7CC184DB347830148E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41C1A55756A8271677DA1D349FB85C53;
+			remoteInfo = JZMultiChoicesCircleButton;
+		};
+		EAC35693DE988C1654AD29C9BFF1856B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AC6DDB3C962A1FD42238BB9C8A7F1CF;
+			remoteInfo = "JZMultiChoicesCircleButton-JZMultiChoicesCircleButton";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		062DC304621ACE4F1DA83BF5320B4D12 /* Pods-JZMultiChoicesCircleButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JZMultiChoicesCircleButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		0C93057C21FD9B67BC914FCD46048D3D /* Pods-JZMultiChoicesCircleButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JZMultiChoicesCircleButton_Example-frameworks.sh"; sourceTree = "<group>"; };
+		0D49B7951BEBC12600AEE3A0 /* JZMultiChoicesCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZMultiChoicesCircleButton.h; sourceTree = "<group>"; };
+		0D49B7961BEBC12600AEE3A0 /* JZMultiChoicesCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZMultiChoicesCircleButton.m; sourceTree = "<group>"; };
+		0D49B79C1BEBC25300AEE3A0 /* CallbackSuccess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CallbackSuccess.png; path = Assets/CallbackSuccess.png; sourceTree = "<group>"; };
+		0D49B79D1BEBC25300AEE3A0 /* CallbackSuccess@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CallbackSuccess@2x.png"; path = "Assets/CallbackSuccess@2x.png"; sourceTree = "<group>"; };
+		0D49B79E1BEBC25300AEE3A0 /* CallbackSuccess@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CallbackSuccess@3x.png"; path = "Assets/CallbackSuccess@3x.png"; sourceTree = "<group>"; };
+		0D49B79F1BEBC25300AEE3A0 /* CallbackWrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CallbackWrong.png; path = Assets/CallbackWrong.png; sourceTree = "<group>"; };
+		0D49B7A01BEBC25300AEE3A0 /* CallbackWrong@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CallbackWrong@2x.png"; path = "Assets/CallbackWrong@2x.png"; sourceTree = "<group>"; };
+		0D49B7A11BEBC25300AEE3A0 /* CallbackWrong@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CallbackWrong@3x.png"; path = "Assets/CallbackWrong@3x.png"; sourceTree = "<group>"; };
+		0DB11718E779B51109A050364E59F1DF /* Pods-JZMultiChoicesCircleButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JZMultiChoicesCircleButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0E13B9AA2EF2B93E92B6B09AF62FF511 /* Pods-JZMultiChoicesCircleButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JZMultiChoicesCircleButton_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1AE8E793E89B78A756DF2694CB3B0CA1 /* JZMultiChoicesCircleButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JZMultiChoicesCircleButton-umbrella.h"; sourceTree = "<group>"; };
+		203FEDA557A09F70F6CCA6EF262B120A /* Pods-JZMultiChoicesCircleButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JZMultiChoicesCircleButton_Tests-dummy.m"; sourceTree = "<group>"; };
+		26C088321B6E8CDC766E5881DFE6E84A /* JZMultiChoicesCircleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JZMultiChoicesCircleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		294948BDD7653B2C0C0F457B49BD7A00 /* JZMultiChoicesCircleButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JZMultiChoicesCircleButton-dummy.m"; sourceTree = "<group>"; };
+		2BDE4757E758EB18DB8543E4464E88C3 /* Pods-JZMultiChoicesCircleButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JZMultiChoicesCircleButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2C17C2D872248696908E4874C9D99F28 /* Pods-JZMultiChoicesCircleButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JZMultiChoicesCircleButton_Example-resources.sh"; sourceTree = "<group>"; };
+		302A39EB450E36BDBD86978BF072DE77 /* Pods_JZMultiChoicesCircleButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JZMultiChoicesCircleButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ABED695CB40C6A0BED1CD419606F913 /* JZMultiChoicesCircleButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JZMultiChoicesCircleButton.xcconfig; sourceTree = "<group>"; };
+		3CE11031193F72CA1F6D7227523FB82B /* JZMultiChoicesCircleButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JZMultiChoicesCircleButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3EF1FF3D6E63E4A1EDF5A56D610766F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8886605A501D9EC0C7FDFC62044499 /* Pods-JZMultiChoicesCircleButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JZMultiChoicesCircleButton_Example.modulemap"; sourceTree = "<group>"; };
+		6E184D86030CDE480CC3F4A1C57F6009 /* Pods_JZMultiChoicesCircleButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JZMultiChoicesCircleButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73994E564686BE3D02A2CA03F7A90011 /* Pods-JZMultiChoicesCircleButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JZMultiChoicesCircleButton_Tests-resources.sh"; sourceTree = "<group>"; };
+		78D6FED16E8D7DA31B1CE4C19EF22247 /* Pods-JZMultiChoicesCircleButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JZMultiChoicesCircleButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		79E66EC2F9CD7B03CBCFB8E92BEB81DE /* JZMultiChoicesCircleButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JZMultiChoicesCircleButton-prefix.pch"; sourceTree = "<group>"; };
+		815A81AFC1325F9C9A22A436DCBA2325 /* Pods-JZMultiChoicesCircleButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JZMultiChoicesCircleButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A9908CD0121F4799202F39C28BD5372 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99DE500E6A16AB99FF37D2FE6D82747F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF1C24150654BF01853DCF0F1BEE37E4 /* Pods-JZMultiChoicesCircleButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JZMultiChoicesCircleButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B8F80856BB3AEB471FBE5D1FE562BEAA /* Pods-JZMultiChoicesCircleButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JZMultiChoicesCircleButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		B9FE9F552290AF8BBA69DAB8F1D6D032 /* Pods-JZMultiChoicesCircleButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JZMultiChoicesCircleButton_Tests.modulemap"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C566B7275BED099652F945BBD8451007 /* JZMultiChoicesCircleButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JZMultiChoicesCircleButton.modulemap; sourceTree = "<group>"; };
+		D3C86DB8B2B0BF42018FC25DB12DFF25 /* Pods-JZMultiChoicesCircleButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JZMultiChoicesCircleButton_Example-dummy.m"; sourceTree = "<group>"; };
+		DDCD5D1B1F539E6D470050777632A6C6 /* Pods-JZMultiChoicesCircleButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JZMultiChoicesCircleButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E47E677042E88ACAE877216860065653 /* Pods-JZMultiChoicesCircleButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JZMultiChoicesCircleButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		EFA8D51AEF7A36B866F83A8CB2376FCA /* Pods-JZMultiChoicesCircleButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JZMultiChoicesCircleButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		187E0D8BFC171C558224C88AE52C7823 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CC0C5E5884234BA462CA32D3430E11F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF169E5912EDA331072F9A02AB61D91F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4655A500212E2298B5255843C3B4EF80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D0963BBD49DCCA590D4E4B588BDA15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D66D30953DF0137A88060B19570302B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				023C62236CED11A46305865B9DF501EF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00085CDED825C52E93069AE37C7BEC34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CE11031193F72CA1F6D7227523FB82B /* JZMultiChoicesCircleButton.bundle */,
+				26C088321B6E8CDC766E5881DFE6E84A /* JZMultiChoicesCircleButton.framework */,
+				302A39EB450E36BDBD86978BF072DE77 /* Pods_JZMultiChoicesCircleButton_Example.framework */,
+				6E184D86030CDE480CC3F4A1C57F6009 /* Pods_JZMultiChoicesCircleButton_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D49B79B1BEBC24600AEE3A0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0D49B79C1BEBC25300AEE3A0 /* CallbackSuccess.png */,
+				0D49B79D1BEBC25300AEE3A0 /* CallbackSuccess@2x.png */,
+				0D49B79E1BEBC25300AEE3A0 /* CallbackSuccess@3x.png */,
+				0D49B79F1BEBC25300AEE3A0 /* CallbackWrong.png */,
+				0D49B7A01BEBC25300AEE3A0 /* CallbackWrong@2x.png */,
+				0D49B7A11BEBC25300AEE3A0 /* CallbackWrong@3x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		46CCE6D4A86A3251EBECD93125648D2A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46DF5F8679A91A1E5C20F1B18965DF19 /* Pods-JZMultiChoicesCircleButton_Example */,
+				F895EE06EF32AFF326F616EAE0BA0456 /* Pods-JZMultiChoicesCircleButton_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		46DF5F8679A91A1E5C20F1B18965DF19 /* Pods-JZMultiChoicesCircleButton_Example */ = {
+			isa = PBXGroup;
+			children = (
+				99DE500E6A16AB99FF37D2FE6D82747F /* Info.plist */,
+				5D8886605A501D9EC0C7FDFC62044499 /* Pods-JZMultiChoicesCircleButton_Example.modulemap */,
+				0DB11718E779B51109A050364E59F1DF /* Pods-JZMultiChoicesCircleButton_Example-acknowledgements.markdown */,
+				78D6FED16E8D7DA31B1CE4C19EF22247 /* Pods-JZMultiChoicesCircleButton_Example-acknowledgements.plist */,
+				D3C86DB8B2B0BF42018FC25DB12DFF25 /* Pods-JZMultiChoicesCircleButton_Example-dummy.m */,
+				0C93057C21FD9B67BC914FCD46048D3D /* Pods-JZMultiChoicesCircleButton_Example-frameworks.sh */,
+				2C17C2D872248696908E4874C9D99F28 /* Pods-JZMultiChoicesCircleButton_Example-resources.sh */,
+				B8F80856BB3AEB471FBE5D1FE562BEAA /* Pods-JZMultiChoicesCircleButton_Example-umbrella.h */,
+				E47E677042E88ACAE877216860065653 /* Pods-JZMultiChoicesCircleButton_Example.debug.xcconfig */,
+				AF1C24150654BF01853DCF0F1BEE37E4 /* Pods-JZMultiChoicesCircleButton_Example.release.xcconfig */,
+			);
+			name = "Pods-JZMultiChoicesCircleButton_Example";
+			path = "Target Support Files/Pods-JZMultiChoicesCircleButton_Example";
+			sourceTree = "<group>";
+		};
+		7D7D07AA2FEC856916FEF49B7C8807C6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0D49B7951BEBC12600AEE3A0 /* JZMultiChoicesCircleButton.h */,
+				0D49B7961BEBC12600AEE3A0 /* JZMultiChoicesCircleButton.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				EEE39078D7E00F616C30C4844BF5CC33 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				00085CDED825C52E93069AE37C7BEC34 /* Products */,
+				46CCE6D4A86A3251EBECD93125648D2A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A0D67D65B81268E4D1D8C7F1EB2E9CF7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				0D49B79B1BEBC24600AEE3A0 /* Assets */,
+				7D7D07AA2FEC856916FEF49B7C8807C6 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CEC16195537DF87A818E7864102D065D /* JZMultiChoicesCircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				A0D67D65B81268E4D1D8C7F1EB2E9CF7 /* Pod */,
+				E36EC85B57048E7F13AC8F1EE426504B /* Support Files */,
+			);
+			name = JZMultiChoicesCircleButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E36EC85B57048E7F13AC8F1EE426504B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3EF1FF3D6E63E4A1EDF5A56D610766F8 /* Info.plist */,
+				C566B7275BED099652F945BBD8451007 /* JZMultiChoicesCircleButton.modulemap */,
+				3ABED695CB40C6A0BED1CD419606F913 /* JZMultiChoicesCircleButton.xcconfig */,
+				294948BDD7653B2C0C0F457B49BD7A00 /* JZMultiChoicesCircleButton-dummy.m */,
+				79E66EC2F9CD7B03CBCFB8E92BEB81DE /* JZMultiChoicesCircleButton-prefix.pch */,
+				1AE8E793E89B78A756DF2694CB3B0CA1 /* JZMultiChoicesCircleButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JZMultiChoicesCircleButton";
+			sourceTree = "<group>";
+		};
+		EEE39078D7E00F616C30C4844BF5CC33 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEC16195537DF87A818E7864102D065D /* JZMultiChoicesCircleButton */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F895EE06EF32AFF326F616EAE0BA0456 /* Pods-JZMultiChoicesCircleButton_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8A9908CD0121F4799202F39C28BD5372 /* Info.plist */,
+				B9FE9F552290AF8BBA69DAB8F1D6D032 /* Pods-JZMultiChoicesCircleButton_Tests.modulemap */,
+				DDCD5D1B1F539E6D470050777632A6C6 /* Pods-JZMultiChoicesCircleButton_Tests-acknowledgements.markdown */,
+				EFA8D51AEF7A36B866F83A8CB2376FCA /* Pods-JZMultiChoicesCircleButton_Tests-acknowledgements.plist */,
+				203FEDA557A09F70F6CCA6EF262B120A /* Pods-JZMultiChoicesCircleButton_Tests-dummy.m */,
+				2BDE4757E758EB18DB8543E4464E88C3 /* Pods-JZMultiChoicesCircleButton_Tests-frameworks.sh */,
+				73994E564686BE3D02A2CA03F7A90011 /* Pods-JZMultiChoicesCircleButton_Tests-resources.sh */,
+				0E13B9AA2EF2B93E92B6B09AF62FF511 /* Pods-JZMultiChoicesCircleButton_Tests-umbrella.h */,
+				815A81AFC1325F9C9A22A436DCBA2325 /* Pods-JZMultiChoicesCircleButton_Tests.debug.xcconfig */,
+				062DC304621ACE4F1DA83BF5320B4D12 /* Pods-JZMultiChoicesCircleButton_Tests.release.xcconfig */,
+			);
+			name = "Pods-JZMultiChoicesCircleButton_Tests";
+			path = "Target Support Files/Pods-JZMultiChoicesCircleButton_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2BF2830054A842F500B85B6140479B52 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D93B09B8751480AEF7EB84138F947B9 /* Pods-JZMultiChoicesCircleButton_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E3EF07CA6D42A71A987B70DF85953A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0A241EB480013411CC8B38AA4A5655 /* JZMultiChoicesCircleButton-umbrella.h in Headers */,
+				0D49B7971BEBC12600AEE3A0 /* JZMultiChoicesCircleButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4F1D803CC9DA45439B6DD45A1BA548D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8759E808F5D3FE470E425515322FA481 /* Pods-JZMultiChoicesCircleButton_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		41C1A55756A8271677DA1D349FB85C53 /* JZMultiChoicesCircleButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDAE360D856614B99C9D90B2B597914 /* Build configuration list for PBXNativeTarget "JZMultiChoicesCircleButton" */;
+			buildPhases = (
+				7D115ACE6515A2A3E231DD2E4CB3D6BB /* Sources */,
+				2CC0C5E5884234BA462CA32D3430E11F /* Frameworks */,
+				6D9B02D7B312250CCE5D240D9E530862 /* Resources */,
+				9E3EF07CA6D42A71A987B70DF85953A1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F230538069A8B339B944142B26BDECEE /* PBXTargetDependency */,
+			);
+			name = JZMultiChoicesCircleButton;
+			productName = JZMultiChoicesCircleButton;
+			productReference = 26C088321B6E8CDC766E5881DFE6E84A /* JZMultiChoicesCircleButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46D560CCD2030AF487FA465A07DB4B2A /* Pods-JZMultiChoicesCircleButton_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A83E738F73CEEA63F7F4C1F07FCD82B /* Build configuration list for PBXNativeTarget "Pods-JZMultiChoicesCircleButton_Example" */;
+			buildPhases = (
+				085F1B9FB152E653125AFD92BD8FF757 /* Sources */,
+				4655A500212E2298B5255843C3B4EF80 /* Frameworks */,
+				F4F1D803CC9DA45439B6DD45A1BA548D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8EB591C5EBFE61E7359487F6000A34C0 /* PBXTargetDependency */,
+			);
+			name = "Pods-JZMultiChoicesCircleButton_Example";
+			productName = "Pods-JZMultiChoicesCircleButton_Example";
+			productReference = 302A39EB450E36BDBD86978BF072DE77 /* Pods_JZMultiChoicesCircleButton_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8AC6DDB3C962A1FD42238BB9C8A7F1CF /* JZMultiChoicesCircleButton-JZMultiChoicesCircleButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2D0A79A4A767F0749CB4489B9D34819 /* Build configuration list for PBXNativeTarget "JZMultiChoicesCircleButton-JZMultiChoicesCircleButton" */;
+			buildPhases = (
+				922931A926C0F232230A196494A29209 /* Sources */,
+				187E0D8BFC171C558224C88AE52C7823 /* Frameworks */,
+				3E56ED3A2BB873E2D2461294395580FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JZMultiChoicesCircleButton-JZMultiChoicesCircleButton";
+			productName = "JZMultiChoicesCircleButton-JZMultiChoicesCircleButton";
+			productReference = 3CE11031193F72CA1F6D7227523FB82B /* JZMultiChoicesCircleButton.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C6FDCD7065D220DD8BD74A23761D261A /* Pods-JZMultiChoicesCircleButton_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 161E66E1F208AA4E9402F844BA1A8179 /* Build configuration list for PBXNativeTarget "Pods-JZMultiChoicesCircleButton_Tests" */;
+			buildPhases = (
+				CAC15F98EA8DD618772C5A4E9940814F /* Sources */,
+				6D66D30953DF0137A88060B19570302B /* Frameworks */,
+				2BF2830054A842F500B85B6140479B52 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6021E81718732B7BD91806336590DF3B /* PBXTargetDependency */,
+			);
+			name = "Pods-JZMultiChoicesCircleButton_Tests";
+			productName = "Pods-JZMultiChoicesCircleButton_Tests";
+			productReference = 6E184D86030CDE480CC3F4A1C57F6009 /* Pods_JZMultiChoicesCircleButton_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 00085CDED825C52E93069AE37C7BEC34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41C1A55756A8271677DA1D349FB85C53 /* JZMultiChoicesCircleButton */,
+				8AC6DDB3C962A1FD42238BB9C8A7F1CF /* JZMultiChoicesCircleButton-JZMultiChoicesCircleButton */,
+				46D560CCD2030AF487FA465A07DB4B2A /* Pods-JZMultiChoicesCircleButton_Example */,
+				C6FDCD7065D220DD8BD74A23761D261A /* Pods-JZMultiChoicesCircleButton_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E56ED3A2BB873E2D2461294395580FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D9B02D7B312250CCE5D240D9E530862 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D49B7A31BEBC25300AEE3A0 /* CallbackSuccess@2x.png in Resources */,
+				0D49B7A71BEBC25300AEE3A0 /* CallbackWrong@3x.png in Resources */,
+				0D49B7A61BEBC25300AEE3A0 /* CallbackWrong@2x.png in Resources */,
+				0D49B7A21BEBC25300AEE3A0 /* CallbackSuccess.png in Resources */,
+				0D49B7A41BEBC25300AEE3A0 /* CallbackSuccess@3x.png in Resources */,
+				0D49B7A51BEBC25300AEE3A0 /* CallbackWrong.png in Resources */,
+				7402EB60A75F8DB99C66B03C4114678C /* JZMultiChoicesCircleButton.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		085F1B9FB152E653125AFD92BD8FF757 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D758A55B3E2FA7167A4D0660396D43BC /* Pods-JZMultiChoicesCircleButton_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D115ACE6515A2A3E231DD2E4CB3D6BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D49B7981BEBC12600AEE3A0 /* JZMultiChoicesCircleButton.m in Sources */,
+				C00233263E3002184588BE1B8FC0A2C1 /* JZMultiChoicesCircleButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		922931A926C0F232230A196494A29209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC15F98EA8DD618772C5A4E9940814F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				872B47DEAFA79AE2ED4DA67999E1B4E9 /* Pods-JZMultiChoicesCircleButton_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6021E81718732B7BD91806336590DF3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JZMultiChoicesCircleButton;
+			target = 41C1A55756A8271677DA1D349FB85C53 /* JZMultiChoicesCircleButton */;
+			targetProxy = 905D8D9C81403D7CC184DB347830148E /* PBXContainerItemProxy */;
+		};
+		8EB591C5EBFE61E7359487F6000A34C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JZMultiChoicesCircleButton;
+			target = 41C1A55756A8271677DA1D349FB85C53 /* JZMultiChoicesCircleButton */;
+			targetProxy = 0E2056DA249C57D0C4C4C2817E4DC08E /* PBXContainerItemProxy */;
+		};
+		F230538069A8B339B944142B26BDECEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JZMultiChoicesCircleButton-JZMultiChoicesCircleButton";
+			target = 8AC6DDB3C962A1FD42238BB9C8A7F1CF /* JZMultiChoicesCircleButton-JZMultiChoicesCircleButton */;
+			targetProxy = EAC35693DE988C1654AD29C9BFF1856B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A8F9281C5FC8077B3FF9E754B716AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 062DC304621ACE4F1DA83BF5320B4D12 /* Pods-JZMultiChoicesCircleButton_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JZMultiChoicesCircleButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JZMultiChoicesCircleButton_Tests/Pods-JZMultiChoicesCircleButton_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JZMultiChoicesCircleButton_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		11B94A32A0F90FB8F1EB49128370FEEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABED695CB40C6A0BED1CD419606F913 /* JZMultiChoicesCircleButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JZMultiChoicesCircleButton/JZMultiChoicesCircleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JZMultiChoicesCircleButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JZMultiChoicesCircleButton/JZMultiChoicesCircleButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JZMultiChoicesCircleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1EBD6CC45F40781577C10CA391D4125D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABED695CB40C6A0BED1CD419606F913 /* JZMultiChoicesCircleButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JZMultiChoicesCircleButton/JZMultiChoicesCircleButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JZMultiChoicesCircleButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JZMultiChoicesCircleButton/JZMultiChoicesCircleButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JZMultiChoicesCircleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		30C6E5AA438B8ACCBBC4F7C800281999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABED695CB40C6A0BED1CD419606F913 /* JZMultiChoicesCircleButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JZMultiChoicesCircleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6A48BA425E0FB3336DF87445108A6BAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 815A81AFC1325F9C9A22A436DCBA2325 /* Pods-JZMultiChoicesCircleButton_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JZMultiChoicesCircleButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JZMultiChoicesCircleButton_Tests/Pods-JZMultiChoicesCircleButton_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JZMultiChoicesCircleButton_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70D541EC97D25B0762EDAD209F317F85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47E677042E88ACAE877216860065653 /* Pods-JZMultiChoicesCircleButton_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JZMultiChoicesCircleButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JZMultiChoicesCircleButton_Example/Pods-JZMultiChoicesCircleButton_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JZMultiChoicesCircleButton_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A828A929F868D40E1103F20D3B03FC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF1C24150654BF01853DCF0F1BEE37E4 /* Pods-JZMultiChoicesCircleButton_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JZMultiChoicesCircleButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JZMultiChoicesCircleButton_Example/Pods-JZMultiChoicesCircleButton_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JZMultiChoicesCircleButton_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DA888C3F7A1CE5B2A23B057ADF5718E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ABED695CB40C6A0BED1CD419606F913 /* JZMultiChoicesCircleButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JZMultiChoicesCircleButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		161E66E1F208AA4E9402F844BA1A8179 /* Build configuration list for PBXNativeTarget "Pods-JZMultiChoicesCircleButton_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A48BA425E0FB3336DF87445108A6BAF /* Debug */,
+				0A8F9281C5FC8077B3FF9E754B716AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A83E738F73CEEA63F7F4C1F07FCD82B /* Build configuration list for PBXNativeTarget "Pods-JZMultiChoicesCircleButton_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D541EC97D25B0762EDAD209F317F85 /* Debug */,
+				8A828A929F868D40E1103F20D3B03FC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
+				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDAE360D856614B99C9D90B2B597914 /* Build configuration list for PBXNativeTarget "JZMultiChoicesCircleButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EBD6CC45F40781577C10CA391D4125D /* Debug */,
+				11B94A32A0F90FB8F1EB49128370FEEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2D0A79A4A767F0749CB4489B9D34819 /* Build configuration list for PBXNativeTarget "JZMultiChoicesCircleButton-JZMultiChoicesCircleButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30C6E5AA438B8ACCBBC4F7C800281999 /* Debug */,
+				9DA888C3F7A1CE5B2A23B057ADF5718E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

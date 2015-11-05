@@ -1,0 +1,25 @@
+{
+  "name": "JZMultiChoicesCircleButton",
+  "version": "0.1.0",
+  "summary": "A short description of JZMultiChoicesCircleButton.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/JZMultiChoicesCircleButton",
+  "license": "MIT",
+  "authors": {
+    "Fincher Justin": "zhtsu47@me.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/JZMultiChoicesCircleButton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "JZMultiChoicesCircleButton": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+PODS:
+  - JZMultiChoicesCircleButton (0.1.0)
+
+DEPENDENCIES:
+  - JZMultiChoicesCircleButton (from `../`)
+
+EXTERNAL SOURCES:
+  JZMultiChoicesCircleButton:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JZMultiChoicesCircleButton: 93015426e4a713b7126a12f9555063167126ffdf
+
+COCOAPODS: 0.39.0

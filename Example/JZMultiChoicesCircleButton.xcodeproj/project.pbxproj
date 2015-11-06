@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0DCBA6581BEC84C6007D54D3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCBA6571BEC84C6007D54D3 /* Launch Screen.storyboard */; };
 		1F309012E5ECD0ACBDB1D5CC /* Pods_JZMultiChoicesCircleButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9052C8B023B5DB490BDF0F06 /* Pods_JZMultiChoicesCircleButton_Example.framework */; };
 		512D2C1BF75C3DB4520BBA15 /* Pods_JZMultiChoicesCircleButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633DFC3AE1B82817BD9F9D67 /* Pods_JZMultiChoicesCircleButton_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0DCBA6571BEC84C6007D54D3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		188EE183766614833AD9BCDD /* Pods-JZMultiChoicesCircleButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JZMultiChoicesCircleButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JZMultiChoicesCircleButton_Tests/Pods-JZMultiChoicesCircleButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JZMultiChoicesCircleButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JZMultiChoicesCircleButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,6 +135,7 @@
 				6003F59C195388D20070C39A /* JZAppDelegate.h */,
 				6003F59D195388D20070C39A /* JZAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				0DCBA6571BEC84C6007D54D3 /* Launch Screen.storyboard */,
 				6003F5A5195388D20070C39A /* JZViewController.h */,
 				6003F5A6195388D20070C39A /* JZViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -278,6 +281,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				0DCBA6581BEC84C6007D54D3 /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,7 +515,6 @@
 			baseConfigurationReference = 7CDC8F611DAE026427C27B20 /* Pods-JZMultiChoicesCircleButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JZMultiChoicesCircleButton/JZMultiChoicesCircleButton-Prefix.pch";
 				INFOPLIST_FILE = "JZMultiChoicesCircleButton/JZMultiChoicesCircleButton-Info.plist";
@@ -526,7 +529,6 @@
 			baseConfigurationReference = D05F5E1AE75AD60C1F7055AD /* Pods-JZMultiChoicesCircleButton_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JZMultiChoicesCircleButton/JZMultiChoicesCircleButton-Prefix.pch";
 				INFOPLIST_FILE = "JZMultiChoicesCircleButton/JZMultiChoicesCircleButton-Info.plist";

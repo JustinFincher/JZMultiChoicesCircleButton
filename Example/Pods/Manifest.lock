@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  JZMultiChoicesCircleButton: 93015426e4a713b7126a12f9555063167126ffdf
+  JZMultiChoicesCircleButton: 0994d9f1c602141b301beb2593c042233a275ba6
 
 COCOAPODS: 0.39.0

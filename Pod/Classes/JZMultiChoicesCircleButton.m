@@ -149,7 +149,8 @@
     CallbackIcon = [[UIImageView alloc] initWithFrame:CGRectMake((SmallButton.frame.size.width - BigRadius)/2, (SmallButton.frame.size.height - BigRadius)/2, BigRadius, BigRadius)];
     CallbackIcon.layer.transform = CATransform3DMakeScale(UnFullFactor, UnFullFactor, 1.0f);
     
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
+    NSString *bundlePath = [[NSBundle bundleForClass:[JZMultiChoicesCircleButton class]]
+                            pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     CallbackIcon.image = [UIImage imageNamed:@"CallbackSuccess" inBundle:bundle compatibleWithTraitCollection:nil];
     
@@ -461,7 +462,8 @@
 
 - (void)SuccessCallBackWithMessage:(NSString *)String
 {
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
+    NSString *bundlePath = [[NSBundle bundleForClass:[JZMultiChoicesCircleButton class]]
+                            pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     CallbackIcon.image = [UIImage imageNamed:@"CallbackSuccess" inBundle:bundle compatibleWithTraitCollection:nil];
     CallbackMessage.text = String;
@@ -509,7 +511,8 @@
 }
 - (void)FailedCallBackWithMessage:(NSString *)String
 {
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
+    NSString *bundlePath = [[NSBundle bundleForClass:[JZMultiChoicesCircleButton class]]
+                            pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     CallbackIcon.image = [UIImage imageNamed:@"CallbackWrong" inBundle:bundle compatibleWithTraitCollection:nil];
     CallbackMessage.text = String;

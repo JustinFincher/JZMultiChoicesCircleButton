@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C9A6B3A27404B232B181346E'
+               BlueprintIdentifier = '87EFE8B3098D33A5DE0CA47D'
                BlueprintName = 'JZMultiChoicesCircleButton'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'JZMultiChoicesCircleButton.framework'>

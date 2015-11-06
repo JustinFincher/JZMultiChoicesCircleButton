@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Fincher Justin" => "zhtsu47@me.com" }
   s.source           = { :git => "https://github.com/JustinFincher/JZMultiChoicesCircleButton.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/JustZht'
+  s.social_media_url = 'http://fincher.im/'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

@@ -148,7 +148,11 @@
     CGFloat UnFullFactor = SmallRadius/self.frame.size.height;
     CallbackIcon = [[UIImageView alloc] initWithFrame:CGRectMake((SmallButton.frame.size.width - BigRadius)/2, (SmallButton.frame.size.height - BigRadius)/2, BigRadius, BigRadius)];
     CallbackIcon.layer.transform = CATransform3DMakeScale(UnFullFactor, UnFullFactor, 1.0f);
-    CallbackIcon.image = [UIImage imageNamed:@"CallbackSuccess"];
+    
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    CallbackIcon.image = [UIImage imageNamed:@"CallbackSuccess" inBundle:bundle compatibleWithTraitCollection:nil];
+    
     [CallbackIcon setAlpha:0.0f];
     [SmallButton addSubview:CallbackIcon];
     
@@ -457,7 +461,9 @@
 
 - (void)SuccessCallBackWithMessage:(NSString *)String
 {
-    [CallbackIcon setImage:[UIImage imageNamed:@"CallbackSuccess"]];
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    CallbackIcon.image = [UIImage imageNamed:@"CallbackSuccess" inBundle:bundle compatibleWithTraitCollection:nil];
     CallbackMessage.text = String;
     [UIView animateWithDuration:0.3 animations:^(void){ CallbackMessage.alpha = 1.0; } completion:^(BOOL finished){}];
     [UIView animateWithDuration:0.3 animations:^(void){ [CallbackIcon setAlpha:1.0]; } completion:^(BOOL finished){}];
@@ -503,7 +509,9 @@
 }
 - (void)FailedCallBackWithMessage:(NSString *)String
 {
-    [CallbackIcon setImage:[UIImage imageNamed:@"CallbackWrong"]];
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    CallbackIcon.image = [UIImage imageNamed:@"CallbackWrong" inBundle:bundle compatibleWithTraitCollection:nil];
     CallbackMessage.text = String;
     [UIView animateWithDuration:0.3 animations:^(void){ [CallbackMessage setAlpha:1.0]; } completion:^(BOOL finished){}];
     [UIView animateWithDuration:0.3 animations:^(void){ [CallbackIcon setAlpha:1.0]; } completion:^(BOOL finished){}];

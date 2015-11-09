@@ -121,7 +121,7 @@
     label.fontSize = 40;
     label.font = (__bridge CFTypeRef)@"ArialMT";
     label.alignmentMode = kCAAlignmentCenter;
-    [label setForegroundColor:[[UIColor colorWithWhite:1.0 alpha:1.0]CGColor]];
+    [label setForegroundColor:[[UIColor colorWithWhite:1.0 alpha:0.0]CGColor]];
     [label setFrame:CGRectMake(-SmallRadius*3, -52, SmallRadius * 8,100)];
     
     
@@ -330,6 +330,7 @@
     CGPoint Point = [touch locationInView:self];
     //NSLog(@"TouchUpInside:%@", NSStringFromCGPoint(Point));
     
+    [label setForegroundColor:[[UIColor colorWithWhite:1.0 alpha:0.0]CGColor]];
     
     BOOL isTouchUpInsideButton = NO;
     int indexTouchUpInsideButton = 0;

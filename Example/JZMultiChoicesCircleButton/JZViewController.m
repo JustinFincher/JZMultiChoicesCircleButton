@@ -25,8 +25,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     UIImageView * BGView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     [BGView setImage:[UIImage imageNamed:@"BackGound.jpg"]];
-    [self.view addSubview:BGView];
+    //[self.view addSubview:BGView];
 
+    self.view.backgroundColor = [UIColor blackColor];
+    
     UIButton *TestTouchBlockButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [TestTouchBlockButton setFrame:CGRectMake(0, 10, self.view.frame.size.width ,40)];
     [TestTouchBlockButton setTitle:@"Hit Me to Test if JZbutton blocks other touch event" forState:UIControlStateNormal];

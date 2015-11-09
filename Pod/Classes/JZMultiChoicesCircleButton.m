@@ -59,6 +59,13 @@
     return self;
 }
 
+//Magic ....
+-(id)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    id hitView = [super hitTest:point withEvent:event];
+    if (hitView == self) return nil;
+    else return hitView;
+}
+
 - (instancetype)initWithCenterPoint:(CGPoint)Point
                          ButtonIcon:(UIImage*)Icon
                         SmallRadius:(CGFloat)SRadius
@@ -72,6 +79,7 @@
               RespondViewController:(UIViewController *)VC
 {
     self = [self initWithFrame:[UIScreen mainScreen].bounds];
+    
     self.SmallRadius = SRadius;
     self.BigRadius = BRadius;
     self.isTouchDown = NO;

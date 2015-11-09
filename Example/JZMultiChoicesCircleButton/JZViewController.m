@@ -26,7 +26,13 @@
     UIImageView * BGView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     [BGView setImage:[UIImage imageNamed:@"BackGound.jpg"]];
     [self.view addSubview:BGView];
-    
+
+    UIButton *TestTouchBlockButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    [TestTouchBlockButton setFrame:CGRectMake(0, 10, self.view.frame.size.width ,40)];
+    [TestTouchBlockButton setTitle:@"Hit Me to Test if JZbutton blocks other touch event" forState:UIControlStateNormal];
+    [TestTouchBlockButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    TestTouchBlockButton.userInteractionEnabled = YES;
+    [self.view addSubview:TestTouchBlockButton];
     
     NSArray *IconArray = [NSArray arrayWithObjects: [UIImage imageNamed:@"SendRound"],[UIImage imageNamed:@"CompleteRound"],[UIImage imageNamed:@"CalenderRound"],[UIImage imageNamed:@"MarkRound"],nil];
     NSArray *TextArray = [NSArray arrayWithObjects: [NSString stringWithFormat:@"Send"],[NSString stringWithFormat:@"Complete"],[NSString stringWithFormat:@"Calender"],[NSString stringWithFormat:@"Mark"], nil];
@@ -44,6 +50,8 @@
                                                    ParallaxParameter:100
                                                RespondViewController:self];
     [self.view addSubview:NewBTN];
+    
+
     
     
     

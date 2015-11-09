@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JZMultiChoicesCircleButton"
-  s.version          = "0.1.3"
+  s.version          = "0.1.4"
   s.summary          = "Multi-choices button with 3D parallax effect."
 
 # This description is used to generate tags and improve search results.

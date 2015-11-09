@@ -76,12 +76,21 @@ it, simply add the following line to your Podfile:
 pod "JZMultiChoicesCircleButton"
 ```
 
-Or just grab JZMultiChoicesCircleButton.h and .m from github, and grab CallbackSuccess.png and CallbackWrong.png.
+Or just grab JZMultiChoicesCircleButton.h and .m from github,   
+Edit  
+```
+[UIImage imageNamed:@"CallbackSuccess" inBundle:bundle compatibleWithTraitCollection:nil];
+```  
+With  
+```
+[UIImage imageNamed:@"CallbackSuccess"];
+```    
+and grab CallbackSuccess.png and CallbackWrong.png.
 
 
 ##TO-DO 
-Fix icon disapper when clicked too frequently
-Rewrite using scale down animation to prevent the blur CATextlayer
+1.Fix icon disapper when clicked too frequently  
+2.Rewrite using scale down animation to prevent the blur CATextlayer
 
 ## Author
 

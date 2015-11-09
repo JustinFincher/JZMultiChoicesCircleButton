@@ -178,7 +178,7 @@
 
 - (void)TouchDown
 {
-    NSLog(@"TouchDown");
+    //NSLog(@"TouchDown");
     if (!isTouchDown)
     {
         [self TouchDownAnimation];
@@ -228,17 +228,17 @@
     
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint Point = [touch locationInView:self];
-    NSLog(@"TouchDrag:%@", NSStringFromCGPoint(Point));
+    //NSLog(@"TouchDrag:%@", NSStringFromCGPoint(Point));
     
     //UP: XOffest = MAX MakeRotation (xoffest,1,0,0)
     //RIGHT: YOffest = MAX MakeRotation (yoffest,0,1,0)
     CGFloat XOffest = Point.x - CenterPoint.x;
     CGFloat YOffest = Point.y - CenterPoint.y;
-    NSLog(@"XOffest %f    YOffest %f",XOffest,YOffest);
+    //NSLog(@"XOffest %f    YOffest %f",XOffest,YOffest);
     
     CGFloat XDegress = XOffest / self.frame.size.width;
     CGFloat YDegress = YOffest / self.frame.size.height;
-    NSLog(@"XDegress %f    YDegress %f",XDegress,YDegress);
+    //NSLog(@"XDegress %f    YDegress %f",XDegress,YDegress);
     
     CATransform3D Rotate = CATransform3DConcat(CATransform3DMakeRotation(XDegress, 0, 1, 0), CATransform3DMakeRotation(-YDegress, 1, 0, 0));
     if (Parallex)
@@ -271,9 +271,9 @@
         // And finally...
         CGPoint positionInView = CGPointMake(parentPosition.x +transformedChildPos.x, parentPosition.y + transformedChildPos.y);
         
-        NSLog(@"positionInView %@",NSStringFromCGPoint(positionInView));
+        //NSLog(@"positionInView %@",NSStringFromCGPoint(positionInView));
         
-        NSLog(@"View'S position %@",NSStringFromCGPoint(self.layer.position));
+        //NSLog(@"View'S position %@",NSStringFromCGPoint(self.layer.position));
         
         CGFloat XOffest = (positionInView.x - self.CenterPoint.x)/SmallRadius*BigRadius;
         CGFloat YOffest = (positionInView.y - self.CenterPoint.y)/SmallRadius*BigRadius;
@@ -286,12 +286,12 @@
         
         if (CGRectContainsPoint(IconCGRectinWorld, Point))
         {
-            NSLog(@"Selected A button");
+            //NSLog(@"Selected A button");
             [Icon setAlpha:1.0f];
             
             if ([[InfoArray objectAtIndex:count] isKindOfClass:[NSString class]])
             {
-                NSLog(@"INFO ");
+                //NSLog(@"INFO ");
                 infotext = InfoArray[count];
             }
             
@@ -320,7 +320,7 @@
 {
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint Point = [touch locationInView:self];
-    NSLog(@"TouchUpInside:%@", NSStringFromCGPoint(Point));
+    //NSLog(@"TouchUpInside:%@", NSStringFromCGPoint(Point));
     
     
     BOOL isTouchUpInsideButton = NO;
@@ -349,9 +349,9 @@
             // And finally...
             CGPoint positionInView = CGPointMake(parentPosition.x +transformedChildPos.x, parentPosition.y + transformedChildPos.y);
             
-            NSLog(@"positionInView %@",NSStringFromCGPoint(positionInView));
+            //NSLog(@"positionInView %@",NSStringFromCGPoint(positionInView));
             
-            NSLog(@"View'S position %@",NSStringFromCGPoint(self.layer.position));
+            //NSLog(@"View'S position %@",NSStringFromCGPoint(self.layer.position));
             
             CGFloat XOffest = (positionInView.x - self.CenterPoint.x)/SmallRadius*BigRadius;
             CGFloat YOffest = (positionInView.y - self.CenterPoint.y)/SmallRadius*BigRadius;
@@ -395,7 +395,7 @@
 }
 - (void)TouchUpOutside
 {
-    NSLog(@"TouchUpOutside");
+    //NSLog(@"TouchUpOutside");
     if (isTouchDown)
     {
         [self TouchUpAnimation];

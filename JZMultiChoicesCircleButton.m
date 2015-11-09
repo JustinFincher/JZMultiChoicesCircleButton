@@ -45,12 +45,12 @@
 @synthesize ResponderUIVC;
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect {
+ // Drawing code
+ }
+ */
 
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -129,7 +129,7 @@
         
         CGFloat XOffest = 4 * MultiChoiceRadius * cos(2*M_PI*i/Number);
         CGFloat YOffest = 4 * MultiChoiceRadius * sin(2*M_PI*i/Number);
-
+        
         
         UIImageView *IconImageView = [[UIImageView alloc] initWithFrame:CGRectMake(SRadius + XOffest - MultiChoiceRadius , SRadius + YOffest - MultiChoiceRadius, MultiChoiceRadius * 2, MultiChoiceRadius * 2)];
         if ([[ImageArray objectAtIndex:i] isKindOfClass:[UIImage class]])
@@ -148,7 +148,12 @@
     CGFloat UnFullFactor = SmallRadius/self.frame.size.height;
     CallbackIcon = [[UIImageView alloc] initWithFrame:CGRectMake((SmallButton.frame.size.width - BigRadius)/2, (SmallButton.frame.size.height - BigRadius)/2, BigRadius, BigRadius)];
     CallbackIcon.layer.transform = CATransform3DMakeScale(UnFullFactor, UnFullFactor, 1.0f);
-    CallbackIcon.image = [UIImage imageNamed:@"CallbackSuccess"];
+    
+    NSString *bundlePath = [[NSBundle bundleForClass:[JZMultiChoicesCircleButton class]]
+                            pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    CallbackIcon.image = [UIImage imageNamed:@"CallbackSuccess" inBundle:bundle compatibleWithTraitCollection:nil];
+    
     [CallbackIcon setAlpha:0.0f];
     [SmallButton addSubview:CallbackIcon];
     
@@ -173,14 +178,14 @@
 
 - (void)TouchDown
 {
-    NSLog(@"TouchDown");
+    //NSLog(@"TouchDown");
     if (!isTouchDown)
     {
         [self TouchDownAnimation];
         [label setForegroundColor:[[UIColor colorWithWhite:1.0 alpha:1.0]CGColor]];
     }
     self.isTouchDown = YES;
-
+    
 }
 
 - (void)TouchDownAnimation
@@ -217,23 +222,23 @@
 }
 -(void)TouchDrag:(UIButton *)sender withEvent:(UIEvent *)event
 {
-
     
-
+    
+    
     
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint Point = [touch locationInView:self];
-    NSLog(@"TouchDrag:%@", NSStringFromCGPoint(Point));
+    //NSLog(@"TouchDrag:%@", NSStringFromCGPoint(Point));
     
     //UP: XOffest = MAX MakeRotation (xoffest,1,0,0)
     //RIGHT: YOffest = MAX MakeRotation (yoffest,0,1,0)
     CGFloat XOffest = Point.x - CenterPoint.x;
     CGFloat YOffest = Point.y - CenterPoint.y;
-    NSLog(@"XOffest %f    YOffest %f",XOffest,YOffest);
+    //NSLog(@"XOffest %f    YOffest %f",XOffest,YOffest);
     
     CGFloat XDegress = XOffest / self.frame.size.width;
     CGFloat YDegress = YOffest / self.frame.size.height;
-    NSLog(@"XDegress %f    YDegress %f",XDegress,YDegress);
+    //NSLog(@"XDegress %f    YDegress %f",XDegress,YDegress);
     
     CATransform3D Rotate = CATransform3DConcat(CATransform3DMakeRotation(XDegress, 0, 1, 0), CATransform3DMakeRotation(-YDegress, 1, 0, 0));
     if (Parallex)
@@ -244,12 +249,12 @@
     {
         //Do nothing ^_^
     }
-
+    
     NSUInteger count = 0;
     NSString *infotext;
     for (UIImageView *Icon in IconArray)
     {
-
+        
         // Child center relative to parent
         CGPoint childPosition = [Icon.layer.presentationLayer position];
         
@@ -266,13 +271,13 @@
         // And finally...
         CGPoint positionInView = CGPointMake(parentPosition.x +transformedChildPos.x, parentPosition.y + transformedChildPos.y);
         
-        NSLog(@"positionInView %@",NSStringFromCGPoint(positionInView));
+        //NSLog(@"positionInView %@",NSStringFromCGPoint(positionInView));
         
-        NSLog(@"View'S position %@",NSStringFromCGPoint(self.layer.position));
+        //NSLog(@"View'S position %@",NSStringFromCGPoint(self.layer.position));
         
         CGFloat XOffest = (positionInView.x - self.CenterPoint.x)/SmallRadius*BigRadius;
         CGFloat YOffest = (positionInView.y - self.CenterPoint.y)/SmallRadius*BigRadius;
-
+        
         CGRect IconCGRectinWorld = CGRectMake(self.CenterPoint.x + XOffest - (BigRadius + SmallRadius)/4, self.CenterPoint.y + YOffest - (BigRadius + SmallRadius)/4, (BigRadius + SmallRadius)/2, (BigRadius + SmallRadius)/2);
         
         //UIView *DEBUGVIEW = [[UIView alloc] initWithFrame:IconCGRectinWorld];
@@ -281,12 +286,12 @@
         
         if (CGRectContainsPoint(IconCGRectinWorld, Point))
         {
-            NSLog(@"Selected A button");
+            //NSLog(@"Selected A button");
             [Icon setAlpha:1.0f];
             
             if ([[InfoArray objectAtIndex:count] isKindOfClass:[NSString class]])
             {
-                NSLog(@"INFO ");
+                //NSLog(@"INFO ");
                 infotext = InfoArray[count];
             }
             
@@ -315,8 +320,8 @@
 {
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint Point = [touch locationInView:self];
-    NSLog(@"TouchUpInside:%@", NSStringFromCGPoint(Point));
-
+    //NSLog(@"TouchUpInside:%@", NSStringFromCGPoint(Point));
+    
     
     BOOL isTouchUpInsideButton = NO;
     int indexTouchUpInsideButton = 0;
@@ -344,9 +349,9 @@
             // And finally...
             CGPoint positionInView = CGPointMake(parentPosition.x +transformedChildPos.x, parentPosition.y + transformedChildPos.y);
             
-            NSLog(@"positionInView %@",NSStringFromCGPoint(positionInView));
+            //NSLog(@"positionInView %@",NSStringFromCGPoint(positionInView));
             
-            NSLog(@"View'S position %@",NSStringFromCGPoint(self.layer.position));
+            //NSLog(@"View'S position %@",NSStringFromCGPoint(self.layer.position));
             
             CGFloat XOffest = (positionInView.x - self.CenterPoint.x)/SmallRadius*BigRadius;
             CGFloat YOffest = (positionInView.y - self.CenterPoint.y)/SmallRadius*BigRadius;
@@ -390,7 +395,7 @@
 }
 - (void)TouchUpOutside
 {
-    NSLog(@"TouchUpOutside");
+    //NSLog(@"TouchUpOutside");
     if (isTouchDown)
     {
         [self TouchUpAnimation];
@@ -457,7 +462,10 @@
 
 - (void)SuccessCallBackWithMessage:(NSString *)String
 {
-    [CallbackIcon setImage:[UIImage imageNamed:@"CallbackSuccess"]];
+    NSString *bundlePath = [[NSBundle bundleForClass:[JZMultiChoicesCircleButton class]]
+                            pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    CallbackIcon.image = [UIImage imageNamed:@"CallbackSuccess" inBundle:bundle compatibleWithTraitCollection:nil];
     CallbackMessage.text = String;
     [UIView animateWithDuration:0.3 animations:^(void){ CallbackMessage.alpha = 1.0; } completion:^(BOOL finished){}];
     [UIView animateWithDuration:0.3 animations:^(void){ [CallbackIcon setAlpha:1.0]; } completion:^(BOOL finished){}];
@@ -470,7 +478,7 @@
     ButtonScaleKeepCABasicAnimation.fillMode = kCAFillModeForwards;
     ButtonScaleKeepCABasicAnimation.removedOnCompletion = NO;
     ButtonScaleKeepCABasicAnimation.beginTime = 0.0f;
-
+    
     CABasicAnimation *ButtonScaleSmallCABasicAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     ButtonScaleSmallCABasicAnimation.duration = 0.2f;
     ButtonScaleSmallCABasicAnimation.autoreverses = NO;
@@ -488,7 +496,7 @@
     animGroup.removedOnCompletion = NO;
     animGroup.autoreverses = NO;
     animGroup.fillMode = kCAFillModeForwards;
-
+    
     [CATransaction begin];
     [CATransaction setCompletionBlock:^
      {
@@ -503,7 +511,10 @@
 }
 - (void)FailedCallBackWithMessage:(NSString *)String
 {
-    [CallbackIcon setImage:[UIImage imageNamed:@"CallbackWrong"]];
+    NSString *bundlePath = [[NSBundle bundleForClass:[JZMultiChoicesCircleButton class]]
+                            pathForResource:@"JZMultiChoicesCircleButton" ofType:@"bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    CallbackIcon.image = [UIImage imageNamed:@"CallbackWrong" inBundle:bundle compatibleWithTraitCollection:nil];
     CallbackMessage.text = String;
     [UIView animateWithDuration:0.3 animations:^(void){ [CallbackMessage setAlpha:1.0]; } completion:^(BOOL finished){}];
     [UIView animateWithDuration:0.3 animations:^(void){ [CallbackIcon setAlpha:1.0]; } completion:^(BOOL finished){}];
@@ -545,8 +556,8 @@
      }];
     [SmallButton.layer addAnimation:animGroup forKey:@"ButtonScaleAnimation"];
     [CATransaction commit];
-
-
+    
+    
 }
 
 CATransform3D CATransform3DMakePerspective(CGPoint center, float disZ)

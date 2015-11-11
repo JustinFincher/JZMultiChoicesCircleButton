@@ -203,7 +203,7 @@
 - (void)TouchDownAnimation
 {
     
-    [UIView animateWithDuration:0.1 animations:^(void){ [SmallButton.imageView setAlpha:0.0]; } completion:^(BOOL finished){ if (finished) { [SmallButton setImage:nil forState:UIControlStateNormal];}}];
+    [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^(void){ [SmallButton.imageView setAlpha:0.0]; } completion:^(BOOL finished){ if (finished) { [SmallButton setImage:nil forState:UIControlStateNormal];}}];
     
     CABasicAnimation *ButtonScaleBigCABasicAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     ButtonScaleBigCABasicAnimation.duration = 0.1f;
@@ -627,7 +627,7 @@ CATransform3D CATransform3DPerspect(CATransform3D t, CGPoint center, float disZ)
     
     
     [SmallButton setImage:IconImage forState:UIControlStateNormal];
-    [UIView animateWithDuration:0.1 animations:^(void){ [SmallButton.imageView setAlpha:1.0]; } completion:^(BOOL finished){}];
+    [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^(void){ [SmallButton.imageView setAlpha:1.0]; } completion:^(BOOL finished){}];
     
 }
 @end

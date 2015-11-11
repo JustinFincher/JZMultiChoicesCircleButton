@@ -203,7 +203,7 @@
 - (void)TouchDownAnimation
 {
     
-    [UIView animateWithDuration:0.1 animations:^(void){ [SmallButton.imageView setAlpha:0.0]; } completion:^(BOOL finished){ [SmallButton setImage:nil forState:UIControlStateNormal];}];
+    [UIView animateWithDuration:0.1 animations:^(void){ [SmallButton.imageView setAlpha:0.0]; } completion:^(BOOL finished){ if (finished) { [SmallButton setImage:nil forState:UIControlStateNormal];}}];
     
     CABasicAnimation *ButtonScaleBigCABasicAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
     ButtonScaleBigCABasicAnimation.duration = 0.1f;

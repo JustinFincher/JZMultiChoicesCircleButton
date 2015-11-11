@@ -23,6 +23,7 @@
 @property (nonatomic) NSMutableArray* ButtonTargetArray;
 @property (nonatomic) BOOL isTouchDown;
 @property (nonatomic) BOOL Parallex;
+@property (nonatomic) BOOL isPerformingTouchUpInsideAnimation;
 @property (nonatomic) CATextLayer* label;
 
 @property (nonatomic) UIImageView *CallbackIcon;
@@ -39,7 +40,7 @@
 
 @synthesize CircleColor,SmallRadius,BigRadius,CenterPoint,ParallexParameter;
 @synthesize SmallButton,BackgroundView,IconImage,IconArray,label,InfoArray,ButtonTargetArray;
-@synthesize isTouchDown,Parallex;
+@synthesize isTouchDown,Parallex,isPerformingTouchUpInsideAnimation;
 @synthesize CallbackMessage,CallbackIcon;
 @synthesize FullPara,MidiumPara,SmallPara;
 @synthesize ResponderUIVC;
@@ -186,6 +187,9 @@
 
 - (void)TouchDown
 {
+    if (self.isPerformingTouchUpInsideAnimation) {
+        return;
+    }
     //NSLog(@"TouchDown");
     if (!isTouchDown)
     {
@@ -223,17 +227,13 @@
     
     for (UIImageView *Icon in IconArray)
     {
+        [self.layer removeAllAnimations];
         [Icon setHidden:NO];
-        [UIView animateWithDuration:0.3 animations:^(void){ Icon.alpha = 0.7f; } completion:^(BOOL finished){}];
-        
+        [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^(void){ Icon.alpha = 0.7f; } completion:^(BOOL finished){}];
     }
 }
 -(void)TouchDrag:(UIButton *)sender withEvent:(UIEvent *)event
 {
-    
-    
-    
-    
     UITouch *touch = [[event allTouches] anyObject];
     CGPoint Point = [touch locationInView:self];
     //NSLog(@"TouchDrag:%@", NSStringFromCGPoint(Point));
@@ -415,9 +415,11 @@
 
 - (void)TouchUpInsideAnimation
 {
+    self.isPerformingTouchUpInsideAnimation = YES;
+    
     for (UIImageView *Icon in IconArray)
     {
-        [UIView animateWithDuration:0.1 animations:^(void){ Icon.alpha = 0.0f; } completion:^(BOOL finished){[Icon setHidden:YES];}];
+        [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^(void){ Icon.alpha = 0.0f; } completion:^(BOOL finished){if (finished) {[Icon setHidden:YES];}}];
     }
     
     CABasicAnimation *BackgroundViewScaleSmallCABasicAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
@@ -449,8 +451,10 @@
     animGroup.fillMode = kCAFillModeForwards;
     
     [CATransaction begin];
+    __weak JZMultiChoicesCircleButton *weakSelf = self;
     [CATransaction setCompletionBlock:^
      {
+         weakSelf.isPerformingTouchUpInsideAnimation = NO;
      }];
     [SmallButton.layer addAnimation:animGroup forKey:@"ButtonScaleAnimation"];
     [CATransaction commit];
@@ -588,7 +592,7 @@ CATransform3D CATransform3DPerspect(CATransform3D t, CGPoint center, float disZ)
 {
     for (UIImageView *Icon in IconArray)
     {
-        [UIView animateWithDuration:0.1 animations:^(void){ Icon.alpha = 0.0f; } completion:^(BOOL finished){[Icon setHidden:YES];}];
+        [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^(void){ Icon.alpha = 0.0f; } completion:^(BOOL finished){if (finished) {[Icon setHidden:YES];}}];
     }
     
     CABasicAnimation *ButtonScaleSmallCABasicAnimation = [CABasicAnimation animationWithKeyPath:@"transform.scale"];

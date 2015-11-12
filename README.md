@@ -89,8 +89,8 @@ and grab CallbackSuccess.png and CallbackWrong.png.
 
 
 ##TO-DO 
-1.Fix icon disapper when clicked too frequently  
-2.Rewrite using scale down animation to prevent the blur CATextlayer
+
+1.Rewrite using scale down animation to prevent the blur CATextlayer
 
 ## Author
 

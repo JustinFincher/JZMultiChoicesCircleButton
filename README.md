@@ -63,7 +63,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
     [NewBTN FailedCallBackWithMessage:@"NO..."];
 }
 ```
-Use SuccessCallBackWithMessage and FailedCallBackWithMessage to show the animated infomation , or button will be **full screen and don't disappear!!!!**
+Use SuccessCallBackWithMessage and FailedCallBackWithMessage to show the animated information , or button will be **full screen and don't disappear!!!!**
 
 
 
